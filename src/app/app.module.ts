@@ -7,9 +7,10 @@ import { CardComponent } from './components/card/card.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SearchComponent } from './components/search/search.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { SidebarItemComponent } from './components/sidebar-item/sidebar-item.component';
 
 @NgModule({
-  declarations: [AppComponent, CardComponent, HeaderComponent, SearchComponent, SidebarComponent],
+  declarations: [AppComponent, CardComponent, HeaderComponent, SearchComponent, SidebarComponent, SidebarItemComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

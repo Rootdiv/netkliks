@@ -1,13 +1,13 @@
 <li class="film">
-  <a href="./film.html" class="film__link">
+  <a href="{{film.link}}" class="film__link">
     <div class="film__image">
-      <img src="./images/film.jpg" alt="film" class="film__image-img" />
+      <img src="{{film.image}}" alt="{{film.title}}" class="film__image-img" />
     </div>
     <div class="film__titles">
-      <strong class="film__title">{{title}},</strong>
-      <span class="film__subtitle">The Martian 2015</span>
+      <strong class="film__title">{{film.title}},</strong>
+      <span class="film__subtitle">{{film.original}}</span>
     </div>
-    <p class="film__description">Фантастика, приключения</p>
-    <p class="film__rating">7.8</p>
+    <p class="film__description">{{film.category}}</p>
+    <p class="film__rating">{{film.rating}}</p>
   </a>
 </li>

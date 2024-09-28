@@ -1,4 +1,6 @@
-# NetkliksApp
+# Netkliks
+
+Интенсив Glo Academy "Нетфликс на HTML/CSS + JS + Angular" - сентябрь 2024
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
 

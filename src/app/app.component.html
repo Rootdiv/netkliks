@@ -7,15 +7,10 @@
         <div class="content__main">
           <h2 class="content__main-title">Результаты поиска</h2>
           <ul class="content__cards">
-            <app-card title="Марсианин 1" class="content__cards-item" />
-            <app-card title="Марсианин 2" class="content__cards-item" />
-            <app-card title="Марсианин 3" class="content__cards-item" />
-            <app-card title="Марсианин 4" class="content__cards-item" />
-            <app-card title="Марсианин 5" class="content__cards-item" />
-            <app-card title="Марсианин 6" class="content__cards-item" />
+            <app-card *ngFor="let film of filmsData" [film]="film" class="content__cards-item" />
           </ul>
         </div>
-        <app-sidebar class="content__sidebar" />
+        <app-sidebar title="Подборки фильмов и сериалов" class="content__sidebar" />
       </div>
     </div>
   </section>
