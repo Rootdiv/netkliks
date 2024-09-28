@@ -1,0 +1,38 @@
+.header {
+  margin-top: 24px;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+  }
+
+  &__link:hover {
+    color: rgb(255, 73, 73);
+  }
+
+  &__controls {
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    &_mobile {
+      align-self: flex-start;
+      display: none;
+
+      @media (max-width: 768px) {
+        display: block;
+      }
+    }
+  }
+
+  &__btn {
+    line-height: 0;
+  }
+}

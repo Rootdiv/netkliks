@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "netkliks-app": {
+    "netkliks": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/netkliks-app",
+            "outputPath": "dist/netkliks",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "netkliks-app:build:production"
+              "buildTarget": "netkliks:build:production"
             },
             "development": {
-              "buildTarget": "netkliks-app:build:development"
+              "buildTarget": "netkliks:build:development"
             }
           },
           "defaultConfiguration": "development"

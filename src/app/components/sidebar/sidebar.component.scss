@@ -1,0 +1,51 @@
+.sidebar {
+  width: 262px;
+  min-width: 262px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 120px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    min-width: unset;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    margin-bottom: 25px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__item {
+    &-title {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 17px;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #aaaaaa;
+
+    &-link {
+      text-decoration: underline;
+
+      :hover {
+        color: #ff4949;
+      }
+    }
+  }
+}

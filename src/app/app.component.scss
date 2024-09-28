@@ -1,0 +1,50 @@
+.content {
+  margin-bottom: 94px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 25px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__main {
+    flex-grow: 1;
+
+    &-title {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 29px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &-item {
+      width: calc((100% - (30px * 2)) / 3);
+
+      @media (max-width: 991px) {
+        width: calc((100% - 30px) / 2);
+      }
+
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__film {
+    flex-grow: 1;
+  }
+}
