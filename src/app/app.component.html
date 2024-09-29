@@ -1,17 +1,5 @@
 <app-header />
 <main class="main">
   <app-search />
-  <section class="content">
-    <div class="container">
-      <div class="content__box">
-        <div class="content__main">
-          <h2 class="content__main-title">Результаты поиска</h2>
-          <ul class="content__cards">
-            <app-card *ngFor="let film of filmsData" [film]="film" class="content__cards-item" />
-          </ul>
-        </div>
-        <app-sidebar title="Подборки фильмов и сериалов" class="content__sidebar" />
-      </div>
-    </div>
-  </section>
+  <router-outlet />
 </main>

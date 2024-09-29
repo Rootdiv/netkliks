@@ -1,7 +1,7 @@
 <li class="film">
-  <a href="{{film.link}}" class="film__link">
+  <a [routerLink]="['/film', film.id]" class="film__link">
     <div class="film__image">
-      <img src="{{film.image}}" alt="{{film.title}}" class="film__image-img" />
+      <img [src]="film.image" [alt]="film.title" class="film__image-img" />
     </div>
     <div class="film__titles">
       <strong class="film__title">{{film.title}},</strong>

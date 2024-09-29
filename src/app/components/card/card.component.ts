@@ -7,13 +7,5 @@ import { IFilm } from '../../models/film.model';
   styleUrl: './card.component.scss',
 })
 export class CardComponent {
-  @Input() film: IFilm = {
-    id: 0,
-    title: '',
-    original: '',
-    category: '',
-    rating: 0,
-    image: '',
-    link: '',
-  };
+  @Input() film!: IFilm;
 }

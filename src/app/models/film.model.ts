@@ -6,4 +6,5 @@ export interface IFilm {
   rating: number;
   image: string;
   link: string;
+  description: string;
 }

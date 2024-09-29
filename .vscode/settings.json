@@ -7,7 +7,9 @@
       "ngFor",
       "ngSwitch",
       "ngModel",
-      "[sidebarText]"
+      "[sidebarText]",
+      "[routerLink]",
+      "routerLink"
     ],
   },
 }
