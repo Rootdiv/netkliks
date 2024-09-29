@@ -1,5 +1,12 @@
 <app-header />
 <main class="main">
   <app-search />
-  <router-outlet />
+  <section class="content">
+    <div class="container content__container">
+      <div class="content__box">
+        <router-outlet />
+      </div>
+      <app-sidebar title="Подборки фильмов и сериалов" class="content__sidebar" />
+    </div>
+  </section>
 </main>

@@ -1,36 +1,29 @@
-<section class="content">
-  <div class="container">
-    <div class="content__box">
-      <div class="content__film film-page">
-        @if (film) {
-        <div class="film-page__image">
-          <img [src]="film.image" alt="film" class="film-page__image-img" />
-        </div>
-        <div class="film-page__info">
-          <div class="film-page__info-content">
-            <div class="film-page__info-titles">
-              <h2 class="film-page__info-title">{{film.title}},</h2>
-              <p class="film-page__info-subtitle">{{film.original}}</p>
-            </div>
-            <p class="film-page__info-description">
-              @for (category of film.category; track $index) {
-              <span class="film-page__info-description-item">{{category}}</span>
-              }
-            </p>
-            <p class="film-page__info-rating">{{film.rating}}</p>
-            @for (description of film.description; track $index) {
-            <p class="film-page__info-text">
-              {{film.description}}
-            </p>
-            }
-          </div>
-          <div class="film-page__info-controls">
-            <button type="button" class="film-page__info-button">Смотреть</button>
-          </div>
-        </div>
-        }
+<div class="film">
+  @if (film) {
+  <div class="film__image">
+    <img [src]="film.image" alt="film" class="film__image-img" />
+  </div>
+  <div class="film__info">
+    <div class="film__info-content">
+      <div class="film__info-titles">
+        <h2 class="film__info-title">{{film.title}},</h2>
+        <p class="film__info-subtitle">{{film.original}}</p>
       </div>
-      <app-sidebar title="Подборки фильмов и сериалов" class="content__sidebar" />
+      <p class="film__info-description">
+        @for (category of film.category; track $index) {
+        <span class="film__info-description-item">{{category}}</span>
+        }
+      </p>
+      <p class="film__info-rating">{{film.rating}}</p>
+      @for (description of film.description; track $index) {
+      <p class="film__info-text">
+        {{film.description}}
+      </p>
+      }
+    </div>
+    <div class="film__info-controls">
+      <button type="button" class="film__info-button">Смотреть</button>
     </div>
   </div>
-</section>
+  }
+</div>

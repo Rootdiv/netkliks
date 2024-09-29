@@ -1,0 +1,28 @@
+.content {
+  &__main {
+    &-title {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 29px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &-item {
+      width: calc((100% - (30px * 2)) / 3);
+
+      @media (max-width: 991px) {
+        width: calc((100% - 30px) / 2);
+      }
+
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+    }
+  }
+}

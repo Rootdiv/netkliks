@@ -1,0 +1,21 @@
+.content {
+  margin-bottom: 94px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 25px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__box {
+    flex-grow: 1;
+  }
+}
