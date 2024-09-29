@@ -24,6 +24,12 @@
   &__description {
     color: #868686;
     line-height: 19px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item:not(:last-child)::after {
+      content: ',\00A0';
+    }
   }
 
   &__rating {

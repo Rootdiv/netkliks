@@ -55,6 +55,12 @@
       color: #868686;
       line-height: 19px;
       margin-bottom: 2px;
+      display: flex;
+      flex-wrap: wrap;
+
+      &-item:not(:last-child)::after {
+        content: ',\00A0';
+      }
     }
 
     &-rating {

@@ -7,7 +7,11 @@
       <strong class="film__title">{{film.title}},</strong>
       <span class="film__subtitle">{{film.original}}</span>
     </div>
-    <p class="film__description">{{film.category}}</p>
+    <p class="film__description">
+      @for (category of film.category; track $index) {
+      <span class="film__description-item">{{category}}</span>
+      }
+    </p>
     <p class="film__rating">{{film.rating}}</p>
   </a>
 </li>

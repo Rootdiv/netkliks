@@ -12,17 +12,17 @@
               <h2 class="film-page__info-title">{{film.title}},</h2>
               <p class="film-page__info-subtitle">{{film.original}}</p>
             </div>
-            <p class="film-page__info-description">{{film.category}}</p>
+            <p class="film-page__info-description">
+              @for (category of film.category; track $index) {
+              <span class="film-page__info-description-item">{{category}}</span>
+              }
+            </p>
             <p class="film-page__info-rating">{{film.rating}}</p>
+            @for (description of film.description; track $index) {
             <p class="film-page__info-text">
               {{film.description}}
             </p>
-            <!-- <p class="film-page__info-text">
-              Очнувшись, Уотни обнаруживает, что связь с Землёй отсутствует, но при этом
-              полностью функционирует жилой модуль. Главный герой начинает искать способ
-              продержаться на имеющихся запасах еды, витаминов, воды и воздуха ещё 4 года до
-              прилёта следующей миссии «Арес-4».
-            </p> -->
+            }
           </div>
           <div class="film-page__info-controls">
             <button type="button" class="film-page__info-button">Смотреть</button>
