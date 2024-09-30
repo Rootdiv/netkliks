@@ -11,6 +11,7 @@ import { SidebarItemComponent } from './components/sidebar-item/sidebar-item.com
 import { CatalogPageComponent } from './pages/catalog-page/catalog-page.component';
 import { FilmPageComponent } from './pages/film-page/film-page.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     NotFoundComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  providers: [{ provide: APP_BASE_HREF, useValue: '/netkliks/' }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -102,6 +102,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "buildTarget": "netkliks:build:production",
+            "repo": "https://github.com/Rootdiv/netkliks.git",
+            "baseHref": "/netkliks/"
+          }
         }
       }
     }
