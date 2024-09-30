@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { sidebarData } from '../../constants/sidebar.constants';
+import { ISidebarData } from '../../models/sidebar.model';
 
 @Component({
   selector: 'app-sidebar',
@@ -9,5 +10,5 @@ import { sidebarData } from '../../constants/sidebar.constants';
 export class SidebarComponent {
   @Input() title: string = '';
 
-  sidebarData = sidebarData;
+  sidebarData: ISidebarData[] = sidebarData;
 }
